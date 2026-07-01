@@ -57,9 +57,12 @@ a{color:inherit}
 .slot a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:1.5px;text-underline-offset:2px;font-weight:700}
 .slot a:active{color:var(--accent)}
 .gem .gname a{color:var(--accent);text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:2px}
+.gem .gwhy .src{font-size:11px;font-weight:600;color:var(--accent);text-decoration:underline;text-underline-offset:2px;white-space:nowrap}
+.citynav .navlabel{flex:none;align-self:center;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--navy-soft);padding:0 2px}
+.gemnav{margin-top:var(--sp-2)}
 
 /* city section band */
-.city{scroll-margin-top:118px;padding:var(--sp-5) var(--sp-4) 0;max-width:var(--maxw);margin:0 auto}
+.city{scroll-margin-top:172px;padding:var(--sp-5) var(--sp-4) 0;max-width:var(--maxw);margin:0 auto}
 .cityband{border-radius:var(--r-lg);padding:var(--sp-5);color:var(--white);box-shadow:var(--shadow);position:relative;overflow:hidden}
 .cityband.london{background:linear-gradient(135deg,var(--london),var(--london-2))}
 .cityband.ams{background:linear-gradient(135deg,var(--ams),var(--ams-2))}
@@ -86,7 +89,7 @@ a{color:inherit}
 .day .notes{padding:var(--sp-3) var(--sp-4);background:var(--card-2);border-top:1px solid var(--line);font-size:12px;color:var(--ink-2)}
 
 /* local gems */
-.gems{margin-top:var(--sp-5)}
+.gems{margin-top:var(--sp-5);scroll-margin-top:172px}
 .gems h3{font-family:var(--font-head);font-size:18px;margin:0 0 var(--sp-1);display:flex;align-items:center;gap:8px}
 .gems .sub{font-size:12px;color:var(--muted);margin:0 0 var(--sp-3)}
 .gemgroup{margin-bottom:var(--sp-3)}
@@ -116,9 +119,16 @@ footer .b{font-family:var(--font-head);color:var(--ink-2);font-size:13px;margin-
     <h1>🧳 Kim Family · Europe 2026</h1>
     <p class="dates">London → Amsterdam → Paris · Jun 28 – Jul 10</p>
     <nav class="citynav">
+      <span class="navlabel">Days</span>
       <a href="#london">🇬🇧 London</a>
       <a href="#amsterdam">🇳🇱 Amsterdam</a>
       <a href="#paris">🇫🇷 Paris</a>
+    </nav>
+    <nav class="citynav gemnav">
+      <span class="navlabel">Gems</span>
+      <a href="#london-gems">🍴 London</a>
+      <a href="#amsterdam-gems">🍴 Amsterdam</a>
+      <a href="#paris-gems">🍴 Paris</a>
     </nav>
   </div>
 </header>
@@ -183,22 +193,22 @@ footer .b{font-family:var(--font-head);color:var(--ink-2);font-size:13px;margin-
     </div>
   </div>
 
-  <div class="gems">
+  <div class="gems" id="london-gems">
     <h3>🍴 London — Local Gems</h3>
     <p class="sub">Where locals eat &amp; wander, near your Kensington/Notting Hill base. Tap any name to verify it.</p>
     <div class="gemgroup">
       <p class="glabel">Sit-down</p>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Pierino+Thurloe+Place+South+Kensington+London">Pierino</a> <span class="area">· South Ken</span> <span class="price">££</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">Family-run Italian since '95, by the museums, walk-ins, kids welcome.</p></div>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=The+Shed+restaurant+Palace+Gardens+Terrace+Notting+Hill+London">The Shed</a> <span class="area">· Notting Hill</span> <span class="price">£££</span></p><p class="gwhy">Farm-to-fork Sussex produce, cosy terrace — a real local gem.</p></div>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Rockni+restaurant+Old+Brompton+Road+Kensington+London">Rockni</a> <span class="area">· Kensington</span> <span class="price">££</span></p><p class="gwhy">Authentic Persian charcoal grill, family-run, great value, kid-friendly.</p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Pierino+Thurloe+Place+South+Kensington+London">Pierino</a> <span class="area">· South Ken</span> <span class="price">££</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">Family-run Italian since '95, by the museums, walk-ins, kids welcome. <a class="src" target="_blank" rel="noopener noreferrer" href="https://www.pierinorestaurant.com">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=The+Shed+restaurant+Palace+Gardens+Terrace+Notting+Hill+London">The Shed</a> <span class="area">· Notting Hill</span> <span class="price">£££</span></p><p class="gwhy">Farm-to-fork Sussex produce, cosy terrace — a real local gem. <a class="src" target="_blank" rel="noopener noreferrer" href="https://www.theshed-restaurant.com">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Rockni+restaurant+Old+Brompton+Road+Kensington+London">Rockni</a> <span class="area">· Kensington</span> <span class="price">££</span></p><p class="gwhy">Authentic Persian charcoal grill, family-run, great value, kid-friendly. <a class="src" target="_blank" rel="noopener noreferrer" href="https://rocknirestaurant.uk">source ↗</a></p></div>
     </div>
     <div class="gemgroup">
       <p class="glabel">Quick bites</p>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Ottolenghi+Notting+Hill+London">Ottolenghi</a> <span class="area">· Notting Hill</span> <span class="price">£–££</span></p><p class="gwhy">Famous deli — grab salads &amp; pastries for a park picnic.</p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Ottolenghi+Notting+Hill+London">Ottolenghi</a> <span class="area">· Notting Hill</span> <span class="price">£–££</span></p><p class="gwhy">Famous deli — grab salads &amp; pastries for a park picnic. <a class="src" target="_blank" rel="noopener noreferrer" href="https://ottolenghi.co.uk">source ↗</a></p></div>
     </div>
     <div class="gemgroup">
       <p class="glabel">Do &amp; See</p>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Leighton+House+Holland+Park+Road+Kensington+London">Leighton House</a> <span class="area">· Kensington</span> <span class="price">£</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">Victorian artist's house with a stunning gilded Arab Hall — hidden-gem Diane win, ~1 hr.</p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Leighton+House+Holland+Park+Road+Kensington+London">Leighton House</a> <span class="area">· Kensington</span> <span class="price">£</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">Victorian artist's house with a stunning gilded Arab Hall — hidden-gem Diane win, ~1 hr. <a class="src" target="_blank" rel="noopener noreferrer" href="https://www.leightonhouse.co.uk">source ↗</a></p></div>
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Kyoto+Garden+Holland+Park+London">Holland Park + Kyoto Garden</a> <span class="area">· Kensington</span> <span class="price">Free</span></p><p class="gwhy">Peacocks, koi, waterfall + ages 5–14 adventure playground. Golden-hour evening.</p></div>
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Diana+Memorial+Playground+Kensington+Gardens+London">Diana Memorial Playground + Hyde Park</a> <span class="area">· next to base</span> <span class="price">Free</span></p><p class="gwhy">Pirate-ship playground, splash fountain, Serpentine pedal boats.</p></div>
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Daunt+Books+Marylebone+London">Little Venice · Daunt Books</a> <span class="area">· W London</span> <span class="price">Free</span></p><p class="gwhy">Pretty canals + a gorgeous galleried bookshop (Chloe/Diane).</p></div>
@@ -246,25 +256,25 @@ footer .b{font-family:var(--font-head);color:var(--ink-2);font-size:13px;margin-
     </div>
   </div>
 
-  <div class="gems">
+  <div class="gems" id="amsterdam-gems">
     <h3>🍴 Amsterdam — Local Gems</h3>
     <p class="sub">De Pijp / Oud-Zuid favourites — cross-checked by both of us. Tap any name to verify it.</p>
     <div class="gemgroup">
       <p class="glabel">Sit-down</p>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant+Blauw+Amstelveenseweg+Amsterdam">Restaurant Blauw</a> <span class="area">· Oud-Zuid</span> <span class="price">££–£££</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">Indonesian rijsttafel near the hotel — the table fills with little dishes, a kid hit. Book.</p></div>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Loetje+De+Pijp+Ferdinand+Bolstraat+Amsterdam">Loetje De Pijp</a> <span class="area">· De Pijp</span> <span class="price">££</span></p><p class="gwhy">Legendary Amsterdam steak, buzzy neighbourhood feel, kids' menu.</p></div>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Eetcafe+Rosereijn+Amsterdam">Eetcafé Rosereijn</a> <span class="area">· Jordaan edge</span> <span class="price">££</span></p><p class="gwhy">50-yr old-school Dutch eetcafé — stamppot, satay, cosy &amp; fair-priced.</p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant+Blauw+Amstelveenseweg+Amsterdam">Restaurant Blauw</a> <span class="area">· Oud-Zuid</span> <span class="price">££–£££</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">Indonesian rijsttafel near the hotel — the table fills with little dishes, a kid hit. Book. <a class="src" target="_blank" rel="noopener noreferrer" href="https://restaurantblauw.nl/en/home/">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Loetje+De+Pijp+Ferdinand+Bolstraat+Amsterdam">Loetje De Pijp</a> <span class="area">· De Pijp</span> <span class="price">££</span></p><p class="gwhy">Legendary Amsterdam steak, buzzy neighbourhood feel, kids' menu. <a class="src" target="_blank" rel="noopener noreferrer" href="https://loetje.nl">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Eetcafe+Rosereijn+Amsterdam">Eetcafé Rosereijn</a> <span class="area">· Jordaan edge</span> <span class="price">££</span></p><p class="gwhy">50-yr old-school Dutch eetcafé — stamppot, satay, cosy &amp; fair-priced. <a class="src" target="_blank" rel="noopener noreferrer" href="https://rosereijn.nl">source ↗</a></p></div>
     </div>
     <div class="gemgroup">
       <p class="glabel">Quick bites</p>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Groot+Melkhuis+Vondelpark+Amsterdam">Groot Melkhuis</a> <span class="area">· in Vondelpark</span> <span class="price">€–€€</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">Café + terrace + playground right by the hotel — coffee while the kids burn energy.</p></div>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=MOAK+Pancakes+Ferdinand+Bolstraat+Amsterdam">MOAK Pancakes</a> <span class="area">· De Pijp</span> <span class="price">€€</span></p><p class="gwhy">Fun shareable pancake stacks, walk-in only — easy brunch win.</p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Groot+Melkhuis+Vondelpark+Amsterdam">Groot Melkhuis</a> <span class="area">· in Vondelpark</span> <span class="price">€–€€</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">Café + terrace + playground right by the hotel — coffee while the kids burn energy. <a class="src" target="_blank" rel="noopener noreferrer" href="https://grootmelkhuis.nl/en/home/">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=MOAK+Pancakes+Ferdinand+Bolstraat+Amsterdam">MOAK Pancakes</a> <span class="area">· De Pijp</span> <span class="price">€€</span></p><p class="gwhy">Fun shareable pancake stacks, walk-in only — easy brunch win. <a class="src" target="_blank" rel="noopener noreferrer" href="https://moakpancakes.nl/pages/amsterdam-pijp">source ↗</a></p></div>
     </div>
     <div class="gemgroup">
       <p class="glabel">Do &amp; See</p>
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Vondelpark+Amsterdam">Vondelpark</a> <span class="area">· at your door</span> <span class="price">Free</span></p><p class="gwhy">Rent bikes, terraces, summer open-air theatre — the "don't overplan" move.</p></div>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Geitenboerderij+Ridammerhoeve+goat+farm+Amsterdamse+Bos">Goat Farm, Amsterdamse Bos</a> <span class="area">· SW</span> <span class="price">Low</span></p><p class="gwhy">Goats, lambs, playground — very local, very Teddy (spare-morning outing).</p></div>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=STRAAT+Museum+NDSM+Amsterdam+Noord">NDSM Wharf + free ferry + STRAAT</a> <span class="area">· Noord</span> <span class="price">Free+</span></p><p class="gwhy">Edgier creative side: free ferry, giant murals — Chloe/Teddy photos.</p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Geitenboerderij+Ridammerhoeve+goat+farm+Amsterdamse+Bos">Goat Farm, Amsterdamse Bos</a> <span class="area">· SW</span> <span class="price">Low</span></p><p class="gwhy">Goats, lambs, playground — very local, very Teddy (spare-morning outing). <a class="src" target="_blank" rel="noopener noreferrer" href="https://www.geitenboerderij.nl/en">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=STRAAT+Museum+NDSM+Amsterdam+Noord">NDSM Wharf + free ferry + STRAAT</a> <span class="area">· Noord</span> <span class="price">Free+</span></p><p class="gwhy">Edgier creative side: free ferry, giant murals — Chloe/Teddy photos. <a class="src" target="_blank" rel="noopener noreferrer" href="https://straatmuseum.com/en/plan-your-visit">source ↗</a></p></div>
     </div>
   </div>
 </section>
@@ -328,27 +338,27 @@ footer .b{font-family:var(--font-head);color:var(--ink-2);font-size:13px;margin-
     </div>
   </div>
 
-  <div class="gems">
+  <div class="gems" id="paris-gems">
     <h3>🍴 Paris — Local Gems</h3>
     <p class="sub">7th-arr neighbourhood spots — both of us landed on the starred ones. Tap any name to verify it.</p>
     <div class="gemgroup">
       <p class="glabel">Sit-down</p>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+du+Marche+Rue+Cler+Paris">Café du Marché</a> <span class="area">· Rue Cler</span> <span class="price">€€</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">Bargain blackboard lunches, no reservations, locals — classic terrace people-watching.</p></div>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Cinq-Mars+Rue+de+Verneuil+Paris">Cinq-Mars</a> <span class="area">· rue de Verneuil</span> <span class="price">€€–€€€</span></p><p class="gwhy">Classic Left Bank bistro near your flat — relaxed, traditional French. Book.</p></div>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+Varenne+Rue+de+Varenne+Paris">Café Varenne</a> <span class="area">· near Rodin</span> <span class="price">€€</span></p><p class="gwhy">All-day local bistro — no-drama lunch/dinner anchor near base.</p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+du+Marche+Rue+Cler+Paris">Café du Marché</a> <span class="area">· Rue Cler</span> <span class="price">€€</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">Bargain blackboard lunches, no reservations, locals — classic terrace people-watching. <a class="src" target="_blank" rel="noopener noreferrer" href="https://www.frommers.com/destinations/paris/restaurants/le-caf-du-march/">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Cinq-Mars+Rue+de+Verneuil+Paris">Cinq-Mars</a> <span class="area">· rue de Verneuil</span> <span class="price">€€–€€€</span></p><p class="gwhy">Classic Left Bank bistro near your flat — relaxed, traditional French. Book. <a class="src" target="_blank" rel="noopener noreferrer" href="https://www.cinqmarsparis.com/en/">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+Varenne+Rue+de+Varenne+Paris">Café Varenne</a> <span class="area">· near Rodin</span> <span class="price">€€</span></p><p class="gwhy">All-day local bistro — no-drama lunch/dinner anchor near base. <a class="src" target="_blank" rel="noopener noreferrer" href="https://lefooding.com/en/restaurants/cafe-varenne">source ↗</a></p></div>
     </div>
     <div class="gemgroup">
       <p class="glabel">Quick bites &amp; picnic</p>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Breizh+Cafe+Rue+Cler+Paris">Breizh Café</a> <span class="area">· Rue Cler</span> <span class="price">€€</span></p><p class="gwhy">Top Breton galettes/crêpes — casual, kid-easy, better than Eiffel brasseries.</p></div>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Poilane+bakery+Rue+du+Cherche-Midi+Paris">Poilâne + Rue du Bac picnic</a> <span class="area">· 6th/7th</span> <span class="price">€–€€</span></p><p class="gwhy">Legendary sourdough + cheese at Barthélémy → Champ de Mars picnic.</p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Breizh+Cafe+Rue+Cler+Paris">Breizh Café</a> <span class="area">· Rue Cler</span> <span class="price">€€</span></p><p class="gwhy">Top Breton galettes/crêpes — casual, kid-easy, better than Eiffel brasseries. <a class="src" target="_blank" rel="noopener noreferrer" href="https://en.breizhcafe.com/rue-cler">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Poilane+bakery+Rue+du+Cherche-Midi+Paris">Poilâne + Rue du Bac picnic</a> <span class="area">· 6th/7th</span> <span class="price">€–€€</span></p><p class="gwhy">Legendary sourdough + cheese at Barthélémy → Champ de Mars picnic. <a class="src" target="_blank" rel="noopener noreferrer" href="https://www.poilane.com/en/blogs/store/saint-germain-des-pres">source ↗</a></p></div>
     </div>
     <div class="gemgroup">
       <p class="glabel">Do &amp; See</p>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Musee+Rodin+garden+Rue+de+Varenne+Paris">Musée Rodin garden</a> <span class="area">· rue de Varenne</span> <span class="price">€ (kids free)</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">Sculpture garden kids can roam — calmer than the Louvre, big Diane photo win.</p></div>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Deyrolle+46+Rue+du+Bac+Paris">Deyrolle</a> <span class="area">· rue du Bac</span> <span class="price">Free</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">The "Midnight in Paris" taxidermy curiosity cabinet — weird &amp; memorable for the kids.</p></div>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Marche+Saxe-Breteuil+Avenue+de+Saxe+Paris">Marché Saxe-Breteuil</a> <span class="area">· Thu/Sat AM</span> <span class="price">€</span></p><p class="gwhy">Local food market with a postcard Eiffel view down the avenue.</p></div>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Jardin+Catherine+Laboure+Rue+de+Babylone+Paris">Jardin Catherine Labouré</a> <span class="area">· rue de Babylone</span> <span class="price">Free</span></p><p class="gwhy">Hidden former-convent garden — a quiet local reset near base.</p></div>
-      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Le+Bon+Marche+La+Grande+Epicerie+Rue+de+Sevres+Paris">Le Bon Marché + La Grande Épicerie</a> <span class="area">· rue de Sèvres</span> <span class="price">Free browse</span></p><p class="gwhy">Oldest Paris department store (fashion, Chloe) + a wow gourmet food hall.</p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Musee+Rodin+garden+Rue+de+Varenne+Paris">Musée Rodin garden</a> <span class="area">· rue de Varenne</span> <span class="price">€ (kids free)</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">Sculpture garden kids can roam — calmer than the Louvre, big Diane photo win. <a class="src" target="_blank" rel="noopener noreferrer" href="https://www.musee-rodin.fr/en/plan-your-visit/families">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Deyrolle+46+Rue+du+Bac+Paris">Deyrolle</a> <span class="area">· rue du Bac</span> <span class="price">Free</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">The "Midnight in Paris" taxidermy curiosity cabinet — weird &amp; memorable for the kids. <a class="src" target="_blank" rel="noopener noreferrer" href="https://deyrolle.com/en">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Marche+Saxe-Breteuil+Avenue+de+Saxe+Paris">Marché Saxe-Breteuil</a> <span class="area">· Thu/Sat AM</span> <span class="price">€</span></p><p class="gwhy">Local food market with a postcard Eiffel view down the avenue. <a class="src" target="_blank" rel="noopener noreferrer" href="https://parisjetaime.com/eng/shopping/marche-saxe-breteuil-p2272">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Jardin+Catherine+Laboure+Rue+de+Babylone+Paris">Jardin Catherine Labouré</a> <span class="area">· rue de Babylone</span> <span class="price">Free</span></p><p class="gwhy">Hidden former-convent garden — a quiet local reset near base. <a class="src" target="_blank" rel="noopener noreferrer" href="https://parisjetaime.com/eng/culture/jardin-catherine-laboure-p928">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Le+Bon+Marche+La+Grande+Epicerie+Rue+de+Sevres+Paris">Le Bon Marché + La Grande Épicerie</a> <span class="area">· rue de Sèvres</span> <span class="price">Free browse</span></p><p class="gwhy">Oldest Paris department store (fashion, Chloe) + a wow gourmet food hall. <a class="src" target="_blank" rel="noopener noreferrer" href="https://www.lagrandeepicerie.com/en/rive-gauche">source ↗</a></p></div>
     </div>
   </div>
 </section>
