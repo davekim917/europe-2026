@@ -62,7 +62,7 @@ a{color:inherit}
 .gemnav{margin-top:var(--sp-2)}
 
 /* city section band */
-.city{scroll-margin-top:172px;padding:var(--sp-5) var(--sp-4) 0;max-width:var(--maxw);margin:0 auto}
+.city{scroll-margin-top:214px;padding:var(--sp-5) var(--sp-4) 0;max-width:var(--maxw);margin:0 auto}
 .cityband{border-radius:var(--r-lg);padding:var(--sp-5);color:var(--white);box-shadow:var(--shadow);position:relative;overflow:hidden}
 .cityband.london{background:linear-gradient(135deg,var(--london),var(--london-2))}
 .cityband.ams{background:linear-gradient(135deg,var(--ams),var(--ams-2))}
@@ -92,7 +92,7 @@ a{color:inherit}
 .day .notes{padding:var(--sp-3) var(--sp-4);background:var(--card-2);border-top:1px solid var(--line);font-size:12px;color:var(--ink-2)}
 
 /* local gems */
-.gems{margin-top:var(--sp-5);scroll-margin-top:172px}
+.gems{margin-top:var(--sp-5);scroll-margin-top:214px}
 .gems h3{font-family:var(--font-head);font-size:18px;margin:0 0 var(--sp-1);display:flex;align-items:center;gap:8px}
 .gems .sub{font-size:12px;color:var(--muted);margin:0 0 var(--sp-3)}
 .gemgroup{margin-bottom:var(--sp-3)}
@@ -105,6 +105,21 @@ a{color:inherit}
 .gem .pick{display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.04em;color:var(--accent);
   border:1px solid var(--accent);border-radius:var(--r-pill);padding:1px 7px;margin-left:auto}
 
+.travel{padding:var(--sp-5) var(--sp-4) 0;max-width:var(--maxw);margin:0 auto;scroll-margin-top:214px}
+.travel .thead{font-family:var(--font-head);font-size:24px;margin:0 0 2px;display:flex;align-items:center;gap:8px}
+.travel .tsub{font-size:12.5px;color:var(--muted);margin:0 0 var(--sp-4)}
+.tcity{margin-bottom:var(--sp-5)}
+.tcity h3{font-family:var(--font-head);font-size:17px;margin:0 0 var(--sp-2);padding-left:10px;border-left:4px solid var(--line)}
+.tcity.london h3{border-left-color:var(--london)}
+.tcity.ams h3{border-left-color:var(--ams)}
+.tcity.paris h3{border-left-color:var(--paris)}
+.tcity h3 span{font-size:11.5px;font-weight:600;color:var(--muted)}
+.pay{font-size:12px;color:var(--ink-2);background:var(--card-2);border:1px solid var(--line);border-radius:var(--r-sm);padding:8px 10px;margin:0 0 var(--sp-3)}
+.route{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:var(--sp-3) var(--sp-4);margin-bottom:var(--sp-2);box-shadow:var(--shadow)}
+.route .rdest{font-size:13.5px;font-weight:700;margin:0;display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.route .rtime{font-size:11px;font-weight:700;color:var(--accent);white-space:nowrap}
+.route .rhow{font-size:12.5px;color:var(--ink-2);margin:3px 0 0}
+.route .rnote{font-size:11.5px;color:var(--muted);margin:4px 0 0}
 footer{max-width:var(--maxw);margin:0 auto;padding:var(--sp-8) var(--sp-4);text-align:center;color:var(--muted);font-size:11.5px}
 footer .b{font-family:var(--font-head);color:var(--ink-2);font-size:13px;margin-bottom:6px}
 
@@ -132,6 +147,10 @@ footer .b{font-family:var(--font-head);color:var(--ink-2);font-size:13px;margin-
       <a href="#london-gems">💎 London</a>
       <a href="#amsterdam-gems">💎 Amsterdam</a>
       <a href="#paris-gems">💎 Paris</a>
+    </nav>
+    <nav class="citynav gemnav">
+      <span class="navlabel">Travel</span>
+      <a href="#getting-around">🚇 Getting Around</a>
     </nav>
   </div>
 </header>
@@ -204,6 +223,8 @@ footer .b{font-family:var(--font-head);color:var(--ink-2);font-size:13px;margin-
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Pierino+Thurloe+Place+South+Kensington+London">Pierino</a> <span class="area">· South Ken</span> <span class="price">££</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">Family-run Italian since '95, by the museums, walk-ins, kids welcome. <a class="src" target="_blank" rel="noopener noreferrer" href="https://www.pierinorestaurant.com">source ↗</a></p></div>
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=The+Shed+restaurant+Palace+Gardens+Terrace+Notting+Hill+London">The Shed</a> <span class="area">· Notting Hill</span> <span class="price">£££</span></p><p class="gwhy">Farm-to-fork Sussex produce, cosy terrace — a real local gem. <a class="src" target="_blank" rel="noopener noreferrer" href="https://www.theshed-restaurant.com">source ↗</a></p></div>
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Rockni+restaurant+Old+Brompton+Road+Kensington+London">Rockni</a> <span class="area">· Kensington</span> <span class="price">££</span></p><p class="gwhy">Authentic Persian charcoal grill, family-run, great value, kid-friendly. <a class="src" target="_blank" rel="noopener noreferrer" href="https://rocknirestaurant.uk">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Gold+restaurant+Portobello+Road+Notting+Hill+London">Gold</a> <span class="area">· Portobello</span> <span class="price">£££</span></p><p class="gwhy">Trendy wood-fired sharing plates over four floors + a plant-filled garden room — a Chloe/Diane vibe; holds walk-in tables.</p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=The+Churchill+Arms+Kensington+London">The Churchill Arms</a> <span class="area">· Kensington</span> <span class="price">££</span></p><p class="gwhy">The legendary flower-covered pub — serves proper Thai in the back room. Photogenic and local-feeling, fun without being fancy.</p></div>
     </div>
     <div class="gemgroup">
       <p class="glabel">Quick bites</p>
@@ -267,17 +288,20 @@ footer .b{font-family:var(--font-head);color:var(--ink-2);font-size:13px;margin-
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant+Blauw+Amstelveenseweg+Amsterdam">Restaurant Blauw</a> <span class="area">· Oud-Zuid</span> <span class="price">££–£££</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">Indonesian rijsttafel near the hotel — the table fills with little dishes, a kid hit. Book. <a class="src" target="_blank" rel="noopener noreferrer" href="https://restaurantblauw.nl/en/home/">source ↗</a></p></div>
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Loetje+De+Pijp+Ferdinand+Bolstraat+Amsterdam">Loetje De Pijp</a> <span class="area">· De Pijp</span> <span class="price">££</span></p><p class="gwhy">Legendary Amsterdam steak, buzzy neighbourhood feel, kids' menu. <a class="src" target="_blank" rel="noopener noreferrer" href="https://loetje.nl">source ↗</a></p></div>
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Eetcafe+Rosereijn+Amsterdam">Eetcafé Rosereijn</a> <span class="area">· Jordaan edge</span> <span class="price">££</span></p><p class="gwhy">50-yr old-school Dutch eetcafé — stamppot, satay, cosy &amp; fair-priced. <a class="src" target="_blank" rel="noopener noreferrer" href="https://rosereijn.nl">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Moeders+restaurant+Rozengracht+Amsterdam">Moeders</a> <span class="area">· Jordaan</span> <span class="price">€€</span></p><p class="gwhy">"Mothers" — traditional Dutch comfort food in a room papered with photos of moms. A proper local dinner; book ahead. <a class="src" target="_blank" rel="noopener noreferrer" href="https://www.moeders.com">source ↗</a></p></div>
     </div>
     <div class="gemgroup">
       <p class="glabel">Quick bites</p>
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Groot+Melkhuis+Vondelpark+Amsterdam">Groot Melkhuis</a> <span class="area">· in Vondelpark</span> <span class="price">€–€€</span> <span class="pick">⭐ PICK</span></p><p class="gwhy">Café + terrace + playground right by the hotel — coffee while the kids burn energy. <a class="src" target="_blank" rel="noopener noreferrer" href="https://grootmelkhuis.nl/en/home/">source ↗</a></p></div>
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=MOAK+Pancakes+Ferdinand+Bolstraat+Amsterdam">MOAK Pancakes</a> <span class="area">· De Pijp</span> <span class="price">€€</span></p><p class="gwhy">Fun shareable pancake stacks, walk-in only — easy brunch win. <a class="src" target="_blank" rel="noopener noreferrer" href="https://moakpancakes.nl/pages/amsterdam-pijp">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Van+Stapele+Koekmakerij+Amsterdam">Van Stapele Koekmakerij</a> <span class="area">· centre</span> <span class="price">€</span></p><p class="gwhy">Cult one-cookie bakery — a single molten-chocolate cookie, nothing else. Go before 4pm to be sure; quick Chloe/Teddy treat near the Nine Streets. <a class="src" target="_blank" rel="noopener noreferrer" href="https://vanstapele.com">source ↗</a></p></div>
     </div>
     <div class="gemgroup">
       <p class="glabel">Do &amp; See</p>
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Vondelpark+Amsterdam">Vondelpark</a> <span class="area">· at your door</span> <span class="price">Free</span></p><p class="gwhy">Rent bikes, terraces, summer open-air theatre — the "don't overplan" move.</p></div>
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Geitenboerderij+Ridammerhoeve+goat+farm+Amsterdamse+Bos">Goat Farm, Amsterdamse Bos</a> <span class="area">· SW</span> <span class="price">Low</span></p><p class="gwhy">Goats, lambs, playground — very local, very Teddy (spare-morning outing). <a class="src" target="_blank" rel="noopener noreferrer" href="https://www.geitenboerderij.nl/en">source ↗</a></p></div>
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=STRAAT+Museum+NDSM+Amsterdam+Noord">NDSM Wharf + free ferry + STRAAT</a> <span class="area">· Noord</span> <span class="price">Free+</span></p><p class="gwhy">Edgier creative side: free ferry, giant murals — Chloe/Teddy photos. <a class="src" target="_blank" rel="noopener noreferrer" href="https://straatmuseum.com/en/plan-your-visit">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Museum+Ons+Lieve+Heer+op+Solder+Amsterdam">Our Lord in the Attic</a> <span class="area">· centre</span> <span class="price">€€</span></p><p class="gwhy">A whole hidden church built into the top floors of a 17th-c canal house — repeatedly an "unexpected favourite" with kids; quick visit. <a class="src" target="_blank" rel="noopener noreferrer" href="https://www.opsolder.nl/en">source ↗</a></p></div>
     </div>
   </div>
 </section>
@@ -354,6 +378,7 @@ footer .b{font-family:var(--font-head);color:var(--ink-2);font-size:13px;margin-
       <p class="glabel">Quick bites &amp; picnic</p>
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Breizh+Cafe+Rue+Cler+Paris">Breizh Café</a> <span class="area">· Rue Cler</span> <span class="price">€€</span></p><p class="gwhy">Top Breton galettes/crêpes — casual, kid-easy, better than Eiffel brasseries. <a class="src" target="_blank" rel="noopener noreferrer" href="https://en.breizhcafe.com/rue-cler">source ↗</a></p></div>
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Poilane+bakery+Rue+du+Cherche-Midi+Paris">Poilâne + Rue du Bac picnic</a> <span class="area">· 6th/7th</span> <span class="price">€–€€</span></p><p class="gwhy">Legendary sourdough + cheese at Barthélémy → Champ de Mars picnic. <a class="src" target="_blank" rel="noopener noreferrer" href="https://www.poilane.com/en/blogs/store/saint-germain-des-pres">source ↗</a></p></div>
+      <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=L%27As+du+Fallafel+Rue+des+Rosiers+Paris">L'As du Fallafel</a> <span class="area">· Le Marais</span> <span class="price">€</span></p><p class="gwhy">Iconic Marais falafel — fast, cheap, high-energy lunch; pairs perfectly with your Tuesday Marais shopping (closed Fri eve / Sat).</p></div>
     </div>
     <div class="gemgroup">
       <p class="glabel">Do &amp; See</p>
@@ -363,6 +388,40 @@ footer .b{font-family:var(--font-head);color:var(--ink-2);font-size:13px;margin-
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Jardin+Catherine+Laboure+Rue+de+Babylone+Paris">Jardin Catherine Labouré</a> <span class="area">· rue de Babylone</span> <span class="price">Free</span></p><p class="gwhy">Hidden former-convent garden — a quiet local reset near base. <a class="src" target="_blank" rel="noopener noreferrer" href="https://parisjetaime.com/eng/culture/jardin-catherine-laboure-p928">source ↗</a></p></div>
       <div class="gem"><p class="gname"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Le+Bon+Marche+La+Grande+Epicerie+Rue+de+Sevres+Paris">Le Bon Marché + La Grande Épicerie</a> <span class="area">· rue de Sèvres</span> <span class="price">Free browse</span></p><p class="gwhy">Oldest Paris department store (fashion, Chloe) + a wow gourmet food hall. <a class="src" target="_blank" rel="noopener noreferrer" href="https://www.lagrandeepicerie.com/en/rive-gauche">source ↗</a></p></div>
     </div>
+  </div>
+</section>
+
+
+<!-- ===================== GETTING AROUND ===================== -->
+<section class="travel" id="getting-around">
+  <h2 class="thead">🚇 Getting Around</h2>
+  <p class="tsub">Door-to-door from each home base. Payment differs by city — check each note. Times are estimates; confirm live on Citymapper before leaving.</p>
+  <div class="tcity london">
+    <h3>🇬🇧 London <span>· Base: Gordon Place, W8</span></h3>
+    <p class="pay">💳 Contactless / Apple Pay works. Teddy (10) rides free with a fare-paying adult; Chloe (12) needs a child Oyster (Young Visitor discount, or an 11–15 Zip). Check Citymapper + the train's front destination before each ride.</p>
+    <div class="route"><p class="rdest">Tower of London <span class="rtime">30–35 min</span></p><p class="rhow">High St Kensington → Circle line eastbound (Platform 2, front reads 'Edgware Road via Victoria') — direct to Tower Hill, no change.</p><p class="rnote">Tower Hill is right at the gates. Catch the free Yeoman (Beefeater) tour early — last one 15:15.</p></div>
+    <div class="route"><p class="rdest">Harry Potter Studio Tour · Wed Jul 1 <span class="rtime">75–90 min</span></p><p class="rhow">High St Ken → Circle to Victoria → Victoria line to Euston → West Midlands / LNR train direct to Watford Junction (15–20 min) → free shuttle from Stop 4 (15 min).</p><p class="rnote">Leave ~9:30 AM for the 11:30 entry. Show e-ticket 7156772 to board the shuttle.</p></div>
+    <div class="route"><p class="rdest">Natural History Museum <span class="rtime">10–15 min</span></p><p class="rhow">District/Circle to South Kensington (2 stops) + 5-min walk — or just a 15-min walk.</p><p class="rnote">Free entry — book a timed slot.</p></div>
+    <div class="route"><p class="rdest">Notting Hill / Portobello <span class="rtime">12–15 min</span></p><p class="rhow">12–15 min walk north, or High St Ken → Notting Hill Gate (1 stop) then walk.</p><p class="rnote">Portobello market is quiet midweek (you're there Thu).</p></div>
+    <div class="route"><p class="rdest">Covent Garden <span class="rtime">~25 min</span></p><p class="rhow">District/Circle to South Kensington → Piccadilly line direct to Covent Garden.</p></div>
+    <div class="route"><p class="rdest">Eurostar · St Pancras · Fri Jul 3, 08:16 <span class="rtime">~30 min</span></p><p class="rhow">At that hour with luggage: taxi/Uber is easiest (~25 min, ~£25–30). By Tube: Circle to Victoria → Victoria line to King's Cross St Pancras (St Pancras is attached).</p><p class="rnote">EARLY START — leave ~6:10 AM with bags; be there 75–90 min before (~7:00 AM). Taxi avoids stairs/changes.</p></div>
+    <div class="route"><p class="rdest">Scenic No. 11 bus (cheap top-deck tour) <span class="rtime">45–60 min</span></p><p class="rhow">Get to Sloane Square → bus 11 toward Waterloo; sit upstairs, front. Passes Victoria, Westminster/Parliament, County Hall.</p><p class="rnote">£1.75 contactless; Teddy free on buses. Route now ends at Waterloo (older St Paul's advice is outdated).</p></div>
+  </div>
+  <div class="tcity ams">
+    <h3>🇳🇱 Amsterdam <span>· Base: Park Plaza Vondelpark, Koningslaan 3</span></h3>
+    <p class="pay">💳 OVpay contactless — one card/device per rider, tap in AND out. Much of the centre is walkable straight through Vondelpark.</p>
+    <div class="route"><p class="rdest">Anne Frank House · Sat Jul 4, 10:00 <span class="rtime">25–30 min</span></p><p class="rhow">~2 km walk NE through Vondelpark + the canal ring to Westermarkt 20 (foolproof & scenic). To shorten: tram 2 (dir Centraal) from Cornelis Schuytstraat to Leidseplein + 12-min walk.</p><p class="rnote">Westermarkt tram stop is closed (trackworks to 2028). No large bags — leave luggage at the hotel.</p></div>
+    <div class="route"><p class="rdest">Eurostar · Amsterdam Centraal · Sun Jul 5, 16:10 <span class="rtime">15–20 min</span></p><p class="rhow">5-min walk to Cornelis Schuytstraat (or Valeriusplein) → tram 2 (dir Centraal) direct to Amsterdam Centraal.</p><p class="rnote">Intra-EU: just scan your ticket QR at the gates. Be there ~30 min early.</p></div>
+    <div class="route"><p class="rdest">Around the centre / canal cruise <span class="rtime">—</span></p><p class="rhow">Tram 2 (dir Centraal) from Cornelis Schuytstraat toward Leidseplein & the centre; much of the centre is walkable via Vondelpark.</p></div>
+  </div>
+  <div class="tcity paris">
+    <h3>🇫🇷 Paris <span>· Base: near Solférino, 7th (metro Solférino L12 · RER C Musée d'Orsay, 5-min walk)</span></h3>
+    <p class="pay">💳 Metro/RER needs tickets loaded via the Île-de-France Mobilités app / Navigo Easy / station machines — bank-card tap-in does NOT work at the gates. Buy before you go.</p>
+    <div class="route"><p class="rdest">Eiffel Tower <span class="rtime">10–30 min</span></p><p class="rhow">25–30 min scenic walk along the Seine, or RER C from Musée d'Orsay direct to Champ de Mars–Tour Eiffel.</p><p class="rnote">Summit booked Mon Jul 6, 20:00 — 'Visitors with tickets' gate, 15–20 min security, bring ID for the kids.</p></div>
+    <div class="route"><p class="rdest">Louvre <span class="rtime">12–15 min</span></p><p class="rhow">12–15 min walk across Pont Royal, or Line 12 → Concorde → Line 1 → Palais Royal–Musée du Louvre.</p><p class="rnote">Booked Mon Jul 6, 14:00; Chloe & Teddy under-18 free.</p></div>
+    <div class="route"><p class="rdest">Montmartre / Sacré-Cœur <span class="rtime">20–25 min</span></p><p class="rhow">Line 12 DIRECT: Solférino → Abbesses, then walk or take the funicular up the hill.</p><p class="rnote">One-seat ride, no changes — the easiest trip of the trip.</p></div>
+    <div class="route"><p class="rdest">Disneyland Paris · Wed Jul 8 <span class="rtime">~60 min</span></p><p class="rhow">Line 12 → Concorde → Line 1 → Châtelet → RER A (dir Marne-la-Vallée–Chessy) to the end of the line.</p><p class="rnote">Load a Metro-Train-RER ticket (all zones, airports excluded) beforehand; arrive before gates open; station is a 2-min walk from the park.</p></div>
+    <div class="route"><p class="rdest">CDG airport · Fri Jul 10, flight 13:10 <span class="rtime">~50 min</span></p><p class="rhow">Regulated Left-Bank taxi flat rate €65 (best with 4 + luggage, ~45–55 min), or RER C → St-Michel → RER B to CDG (~55 min).</p><p class="rnote">Leave the flat ~9:30 AM. For the RER buy the Paris Region ↔ Airports ticket — normal tickets exclude CDG stations.</p></div>
   </div>
 </section>
 
